@@ -1,12 +1,12 @@
 const path = require('path');
 
 // Check if this is required
-const htmlData = require('../routes/htmlRoutes')
+const htmlData = require('../routes/htmlRoutes');
 
 module.exports = (app) => {
 //route to homepage
                 //DOES THIS ORDER MATTER?
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
 });
                 

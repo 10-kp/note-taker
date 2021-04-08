@@ -1,5 +1,5 @@
-
-const noteDisplay = require('../public/assets/js/index');
+const fs = require('fs');
+const noteDisplay = require('../db/db.json');
 
 //Routing
 module.exports = (app) => {
@@ -21,14 +21,14 @@ app.post('api/notes', (req, res) => {
     // res.sendFile(path.join(__dirname,'/db/db.json'));
     noteList.push(newNote);
 });
-
+//For IDs
 app.get("/api/notes/:id", (req,res) => {
     // display json for the notes array 
-    res.json(notes[req.params.id]);
+    noteDisplay.length =0;
 });
 
 //POST request for a new note
-app.post('api/notes', (req, res) => {
-    notes.push(noteList);
-});
+// app.post('api/notes', (req, res) => {
+//     notes.push(noteList);
+// });
 };

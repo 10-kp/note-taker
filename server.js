@@ -21,15 +21,6 @@ app.use(express.static('public'));
 
 // ROUTER
 // The below points our server to a series of "route" files.
-// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
-
-// Route that sends the user first to the main Page
-// app.get('/', (req, res) => res.sendFile(path.join(__dirname,'./public/index.html')));
-
-// Route that sends the user to the notes Page
-// app.get ('/notes',(req,res) => res.sendFile(path.join(__dirname, '/public/notes.html')));
-
-// app.post
 
 require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
