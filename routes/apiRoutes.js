@@ -26,16 +26,16 @@ app.post('/api/notes', (req, res) => {
     res.json(newNote);
 });
 
-//For IDs and delete
-// app.delete("/api/notes/:id", (req,res) => {
-//     // display json for the notes array 
-//     var id = req.params.id;
-//     console.log(id);
+// For IDs and delete
+app.delete("/api/notes/:id", (req,res) => {
+    // display json for the notes array 
+    var id = req.params.id;
+    console.log(id);
 
-//     for(var i = 0; i <noteDisplay.length; i ++){
-//       console.log(noteDisplay[i]);
-//     };
-// });
+    for(var i = 0; i < noteDisplay.length; i ++){
+      console.log(noteDisplay[i]);
+    };
+});
 
 // POST request for a new note
 app.post('api/notes', (req, res) => {

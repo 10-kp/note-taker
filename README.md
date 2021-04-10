@@ -6,6 +6,8 @@
 
 Git Hub Link: https://github.com/10-kp/team-profile-generator
 
+Snap shot of page: ![Screenshot](https://github.com/10-kp/note-taker/blob/main/note-taker-pic.png)
+
 ## Description
 This is an application that can be used to write, save, and delete notes.
 
