@@ -27,7 +27,7 @@ This is an application that can be used to write, save, and delete notes.
 
 - To use the application locally, run node server.js in your command line interface, and then open http://localhost:3000 in your browser. 
 
-- The Note Taker app is live on Heroku for you to use as well.
+- The Note Taker app is live on Heroku for you to use as well. Here is the link https://damp-journey-24593.herokuapp.com/
 
 
 ## Technologies Used
